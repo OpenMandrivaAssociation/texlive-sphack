@@ -44,6 +44,7 @@ also invisible in vertical mode.
 %{_texmfdistdir}/tex/latex/sphack/sphack.sty
 %doc %{_texmfdistdir}/doc/latex/sphack/sphack-doc.pdf
 %doc %{_texmfdistdir}/doc/latex/sphack/sphack-doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +55,5 @@ also invisible in vertical mode.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
