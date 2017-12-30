@@ -5,8 +5,8 @@
 # catalog-license other-nonfree
 # catalog-version undef
 Name:		texlive-sphack
-Version:	20101223
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	Patch LaTeX kernel spacing macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sphack
