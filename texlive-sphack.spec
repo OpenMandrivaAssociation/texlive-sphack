@@ -1,9 +1,3 @@
-# revision 20842
-# category Package
-# catalog-ctan /macros/latex/contrib/sphack
-# catalog-date 2010-12-23 15:10:24 +0100
-# catalog-license other-nonfree
-# catalog-version undef
 Name:		texlive-sphack
 Version:	20170414
 Release:	1
@@ -32,9 +26,8 @@ also invisible in vertical mode.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/sphack/sphack.sty
-%doc %{_texmfdistdir}/doc/latex/sphack/sphack-doc.pdf
-%doc %{_texmfdistdir}/doc/latex/sphack/sphack-doc.tex
+%{_texmfdistdir}/tex/latex/sphack
+%doc %{_texmfdistdir}/doc/latex/sphack
 
 #-----------------------------------------------------------------------
 %prep
@@ -45,17 +38,3 @@ also invisible in vertical mode.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20101223-2
-+ Revision: 756153
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20101223-1
-+ Revision: 719563
-- texlive-sphack
-- texlive-sphack
-- texlive-sphack
-- texlive-sphack
-
