@@ -1,5 +1,5 @@
 Name:		texlive-sphack
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Patch LaTeX kernel spacing macros
 Group:		Publishing
