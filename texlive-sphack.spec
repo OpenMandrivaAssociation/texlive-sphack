@@ -1,12 +1,12 @@
 Name:		texlive-sphack
-Version:	20190228
+Version:	20842
 Release:	1
 Summary:	Patch LaTeX kernel spacing macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sphack
 License:	OTHER-NONFREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sphack.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sphack.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sphack.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sphack.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -17,12 +17,12 @@ Change the kernel internal \@bsphack/\@esphack so that it is
 also invisible in vertical mode.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -31,7 +31,7 @@ also invisible in vertical mode.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
