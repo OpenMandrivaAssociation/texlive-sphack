@@ -1,6 +1,6 @@
 Name:		texlive-sphack
 Version:	20842
-Release:	1
+Release:	2
 Summary:	Patch LaTeX kernel spacing macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sphack
